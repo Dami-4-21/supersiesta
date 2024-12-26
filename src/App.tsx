@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -20,7 +20,7 @@ import Gateway from './pages/Gateway';
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/gateway" element={<Gateway />} />
           <Route path="/" element={<Layout />}>
@@ -39,7 +39,7 @@ function App() {
             <Route path="returns" element={<Returns />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </CartProvider>
   );
 }

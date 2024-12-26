@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 function Model() {
-  const { scene } = useGLTF('/src/matelaTendresse.glb');
+  const { scene } = useGLTF('/supersiesta/assets/models/matelaTendresse.glb');
   scene.scale.set(2, 2, 2);
   return <primitive object={scene} />;
 }

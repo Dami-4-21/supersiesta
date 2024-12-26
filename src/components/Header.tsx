@@ -26,7 +26,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link to="/" className="flex items-center">
-            <img src="/images/logo.png" alt="Super Siesta" className="h-12 object-contain" />
+            <img src="/supersiesta/assets/images/logo.png" alt="Super Siesta" className="h-12 object-contain" />
           </Link>
           
           <div className="flex-1 w-full sm:max-w-xl">
